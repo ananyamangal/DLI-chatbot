@@ -1,0 +1,75 @@
+{
+  "tables": [
+    "customers",
+    "projects",
+    "teams"
+  ],
+  "schema": [
+    {
+      "table_name": "customers",
+      "description": "Contains all customer names and contact details",
+      "columns": {
+        "customer_id": {
+          "type": "INT",
+          "description": "Primary key of the table"
+        },
+        "name": {
+          "type": "VARCHAR(100)",
+          "description": "Name of the customer"
+        },
+        "contact_info": {
+          "type": "VARCHAR(100)",
+          "description": "Contact information of the customer"
+        }
+      }
+    },
+    {
+      "table_name": "projects",
+      "description": "Contains project details associated with customers and their assigned teams",
+      "columns": {
+        "project_id": {
+          "type": "INT",
+          "description": "Primary key of the table"
+        },
+        "customer_id": {
+          "type": "INT",
+          "description": "Foreign key linking to the customers table"
+        },
+        "name": {
+          "type": "VARCHAR(100)",
+          "description": "Name of the project"
+        },
+        "description": {
+          "type": "TEXT",
+          "description": "Description of the project"
+        },
+        "status": {
+          "type": "VARCHAR(50)",
+          "description": "Current status of the project"
+        },
+        "assigned_team": {
+          "type": "INT",
+          "description": "Foreign key linking to the teams table, indicating the team responsible for the project"
+        }
+      }
+    },
+    {
+      "table_name": "teams",
+      "description": "Contains details about teams working on projects",
+      "columns": {
+        "team_id": {
+          "type": "INT",
+          "description": "Primary key of the table"
+        },
+        "team_name": {
+          "type": "VARCHAR(100)",
+          "description": "Name of the team"
+        },
+        "members": {
+          "type": "JSON",
+          "description": "List of team members"
+        }
+      }
+    }
+  ]
+}
