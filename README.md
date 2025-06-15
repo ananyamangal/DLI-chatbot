@@ -1,4 +1,4 @@
-<img width="300" alt="Screenshot 2025-06-15 at 1 51 03 PM" src="https://github.com/user-attachments/assets/910133df-737b-497d-8a6b-73a10ca38891" /># 📦 DLI Project Assistant
+### 📦 DLI Project Assistant
 A WhatsApp-integrated assistant built with Flask, Twilio, and SQLite, designed to streamline the process of logging customer issues, collecting project-related details, and notifying relevant development teams automatically via structured email drafts.
 ## 🚀 Features
 
@@ -10,6 +10,8 @@ A WhatsApp-integrated assistant built with Flask, Twilio, and SQLite, designed t
 -  Modular code for assistant logic, database handling, and session management
 
 ### 📸 Screenshots
+<img width="200" alt="Screenshot 2025-06-15 at 1 51 03 PM" src="https://github.com/user-attachments/assets/910133df-737b-497d-8a6b-73a10ca38891" />
+<img width="200" alt="Screenshot 2025-06-15 at 1 57 37 PM" src="https://github.com/user-attachments/assets/21f65106-8846-4b05-99cf-d516e4039292" />
 
 ## 🛠️ Tech Stack
 
